@@ -20,10 +20,5 @@ module Perceptor =
         else
             numbers
 
-    let train r inputs expected numbers limit =
-        let weights = generateRandomWeights r numbers limit
-        let guess = feedForward inputs weights
-        let error = expected - guess
-        (0.0, inputs, weights)
-        |||> List.fold2 (fun s i w -> s + (w + constant * error * i))
+
 

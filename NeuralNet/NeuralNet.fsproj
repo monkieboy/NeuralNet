@@ -49,6 +49,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <Compile Include="Perceptor.fs" />
+    <Compile Include="Trainer.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <PropertyGroup>
