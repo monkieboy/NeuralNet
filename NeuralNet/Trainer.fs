@@ -3,7 +3,7 @@ open System
 open Perceptron
 module Trainer =
     
-    let train r inputs expected numbers limit =
+    let train r inputs numbers limit expected =
         let weights = Perceptor.generateRandomWeights r numbers limit
         let guess = Perceptor.feedForward inputs weights
         let error = expected - guess
