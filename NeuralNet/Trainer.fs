@@ -13,10 +13,7 @@ module Trainer =
     let trainer x y a =
         (x,y,1,a)
 
-    let calculateY x =
-        2*x+1
-        
-    let yLine x = calculateY x
+    let yLine x = 2*x+1
 
     let evaluatePoint y line =
         if y < line then -1 else 1
